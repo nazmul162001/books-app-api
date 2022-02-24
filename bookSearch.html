@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>MealDB-Practice</title>
+  <!-- font awesome CDN   -->
+  <script src="https://kit.fontawesome.com/3a00588570.js" crossorigin="anonymous"></script>
+
+  <!-- bootstrap CDN  -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+
+  <style>
+    body{
+      width: 100%;
+      height: 100vh;
+      background-image:url("img/background.png");
+    }
+    #input-field{
+      border: 3px solid rgba(221, 24, 17, 0.733);
+      color: red;
+    }
+    .card{
+      border-radius: 15px;
+      transition: transform .2s ease-in-out;
+    }
+    .card img{
+      border-radius: 15px;
+    }
+    .card:hover{
+      transform: scale(1.02);
+      transform: translateY(-20px);
+    }
+  </style>
+</head>
+<body class="bg-gray">
+
+<h1 class="text-center mt-5 text-success">Find Meals For Your Ingredients</h1> 
+<!-- input field  -->
+<div class="d-flex w-50 mx-auto">
+  <input id="input-field" class="form-control me-2 rounded-pill" type="search" placeholder="Search" aria-label="Search">
+  <button onclick="searchBook()" id="btn-search" class="btn btn-outline-success" type="submit"><i class="fas fa-search"></i></button>
+  <br>
+</div>
+<!-- <p id="err" class="text-center fs-5 fw-light text-danger">Please input a valid input</p> -->
+
+<!-- error text  -->
+
+<!-- data load area  -->
+<div class="mt-5">
+  <div class="container">
+    <div id="search-result" class="row">
+
+      
+      <!-- <div class="col-lg-4 mb-5">
+        <div class="card" style="width: 18rem;">
+          <img src="https://media.istockphoto.com/photos/colorful-vegetables-and-fruits-vegan-food-in-rainbow-colors-picture-id1284690585?b=1&k=20&m=1284690585&s=170667a&w=0&h=HlEPBNsYMVuu-SsohPliBWHJy-IhW9y-fl8dS9KnBBo=" class="card-img-top" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">Card title</h5>
+            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+            <a href="#" class="btn btn-primary">Go somewhere</a>
+          </div>
+        </div>
+      </div> -->
+
+
+    </div>
+  </div>
+</div>
+
+
+<!-- bootstrap Script  -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+  <!-- my script  -->
+  <script src="js/searchBook.js"></script>
+</body>
+</html>
